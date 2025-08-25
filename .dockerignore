@@ -49,7 +49,6 @@ README.md
 **/nbproject/private
 **/target
 *.ctxt
-/.mvn
 .mtj.tmp
 .mvn/timing.properties
 buildNumber.properties
