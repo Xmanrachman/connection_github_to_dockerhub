@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.system.I18nPropertiesSyncTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-08-26T01:34:36" hostname="trachmans-MacBook-Pro.local" time="0.209">
+  <properties/>
+  <testcase name="checkNonInternationalizedStrings()" classname="org.springframework.samples.petclinic.system.I18nPropertiesSyncTest" time="0.111">
+    <failure message="org.opentest4j.AssertionFailedError: Hardcoded (non-internationalized) strings found:&#10;HTML: src/main/resources/templates/fragments/inputField.html Line 21: &lt;span class=&quot;help-inline&quot; th:errors=&quot;*{__${name}__}&quot;&gt;Error&lt;/span&gt;&#10;HTML: src/main/resources/templates/fragments/layout.html Line 13: &lt;title&gt;PetClinic :: a Spring Framework demonstration&lt;/title&gt;&#10;HTML: src/main/resources/templates/fragments/layout.html Line 50: &lt;span&gt;Home&lt;/span&gt;&#10;HTML: src/main/resources/templates/fragments/layout.html Line 55: &lt;span&gt;Find owners&lt;/span&gt;&#10;HTML: src/main/resources/templates/fragments/layout.html Line 60: &lt;span&gt;Veterinarians&lt;/span&gt;&#10;HTML: src/main/resources/templates/fragments/layout.html Line 66: &lt;span&gt;Error&lt;/span&gt;&#10;HTML: src/main/resources/templates/fragments/selectField.html Line 22: &lt;span class=&quot;help-inline&quot; th:errors=&quot;*{__${name}__}&quot;&gt;Error&lt;/span&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 7: &lt;th:block th:if=&quot;${visit['new']}&quot;&gt;New &lt;/th:block&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 11: &lt;b&gt;Pet&lt;/b&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 15: &lt;th&gt;Name&lt;/th&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 16: &lt;th&gt;Birth Date&lt;/th&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 17: &lt;th&gt;Type&lt;/th&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 18: &lt;th&gt;Owner&lt;/th&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 42: &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Add Visit&lt;/button&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 48: &lt;b&gt;Previous Visits&lt;/b&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 51: &lt;th&gt;Date&lt;/th&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 52: &lt;th&gt;Description&lt;/th&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdatePetForm.html Line 7: &lt;th:block th:if=&quot;${pet['new']}&quot;&gt;New &lt;/th:block&gt;&#10;HTML: src/main/resources/templates/pets/createOrUpdatePetForm.html Line 14: &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Owner&lt;/label&gt;&#10;HTML: src/main/resources/templates/vets/vetList.html Line 8: &lt;h2&gt;Veterinarians&lt;/h2&gt;&#10;HTML: src/main/resources/templates/vets/vetList.html Line 13: &lt;th&gt;Name&lt;/th&gt;&#10;HTML: src/main/resources/templates/vets/vetList.html Line 14: &lt;th&gt;Specialties&lt;/th&gt;&#10;HTML: src/main/resources/templates/vets/vetList.html Line 22: th:if=&quot;${vet.nrOfSpecialties == 0}&quot;&gt;none&lt;/span&gt;&lt;/td&gt;&#10;HTML: src/main/resources/templates/vets/vetList.html Line 28: &lt;span&gt;Pages:&lt;/span&gt;&#10;HTML: src/main/resources/templates/owners/createOrUpdateOwnerForm.html Line 6: &lt;h2&gt;Owner&lt;/h2&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 9: &lt;h2&gt;Owner Information&lt;/h2&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 24: &lt;th&gt;Name&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 28: &lt;th&gt;Address&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 32: &lt;th&gt;City&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 36: &lt;th&gt;Telephone&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 49: &lt;h2&gt;Pets and Visits&lt;/h2&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 56: &lt;dt&gt;Name&lt;/dt&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 58: &lt;dt&gt;Birth Date&lt;/dt&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 61: &lt;dt&gt;Type&lt;/dt&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 69: &lt;th&gt;Visit Date&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 70: &lt;th&gt;Description&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 78: &lt;td&gt;&lt;a th:href=&quot;@{__${owner.id}__/pets/__${pet.id}__/edit}&quot;&gt;Edit Pet&lt;/a&gt;&lt;/td&gt;&#10;HTML: src/main/resources/templates/owners/ownerDetails.html Line 79: &lt;td&gt;&lt;a th:href=&quot;@{__${owner.id}__/pets/__${pet.id}__/visits/new}&quot;&gt;Add Visit&lt;/a&gt;&lt;/td&gt;&#10;HTML: src/main/resources/templates/owners/findOwners.html Line 6: &lt;h2&gt;Find Owners&lt;/h2&gt;&#10;HTML: src/main/resources/templates/owners/findOwners.html Line 12: &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Last name &lt;/label&gt;&#10;HTML: src/main/resources/templates/owners/findOwners.html Line 15: maxlength=&quot;80&quot; /&gt; &lt;span class=&quot;help-inline&quot;&gt;&lt;div&#10;HTML: src/main/resources/templates/owners/findOwners.html Line 29: &lt;a class=&quot;btn btn-primary&quot; th:href=&quot;@{/owners/new}&quot;&gt;Add Owner&lt;/a&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 7: &lt;h2&gt;Owners&lt;/h2&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 12: &lt;th style=&quot;width: 150px;&quot;&gt;Name&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 13: &lt;th style=&quot;width: 200px;&quot;&gt;Address&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 14: &lt;th&gt;City&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 15: &lt;th style=&quot;width: 120px&quot;&gt;Telephone&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 16: &lt;th&gt;Pets&lt;/th&gt;&#10;HTML: src/main/resources/templates/owners/ownersList.html Line 32: &lt;span&gt;Pages:&lt;/span&gt;&#10;HTML: src/main/resources/templates/error.html Line 7: &lt;h2&gt;Something happened...&lt;/h2&gt;&#10;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Hardcoded (non-internationalized) strings found:
+HTML: src/main/resources/templates/fragments/inputField.html Line 21: &lt;span class=&quot;help-inline&quot; th:errors=&quot;*{__${name}__}&quot;&gt;Error&lt;/span&gt;
+HTML: src/main/resources/templates/fragments/layout.html Line 13: &lt;title&gt;PetClinic :: a Spring Framework demonstration&lt;/title&gt;
+HTML: src/main/resources/templates/fragments/layout.html Line 50: &lt;span&gt;Home&lt;/span&gt;
+HTML: src/main/resources/templates/fragments/layout.html Line 55: &lt;span&gt;Find owners&lt;/span&gt;
+HTML: src/main/resources/templates/fragments/layout.html Line 60: &lt;span&gt;Veterinarians&lt;/span&gt;
+HTML: src/main/resources/templates/fragments/layout.html Line 66: &lt;span&gt;Error&lt;/span&gt;
+HTML: src/main/resources/templates/fragments/selectField.html Line 22: &lt;span class=&quot;help-inline&quot; th:errors=&quot;*{__${name}__}&quot;&gt;Error&lt;/span&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 7: &lt;th:block th:if=&quot;${visit['new']}&quot;&gt;New &lt;/th:block&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 11: &lt;b&gt;Pet&lt;/b&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 15: &lt;th&gt;Name&lt;/th&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 16: &lt;th&gt;Birth Date&lt;/th&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 17: &lt;th&gt;Type&lt;/th&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 18: &lt;th&gt;Owner&lt;/th&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 42: &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Add Visit&lt;/button&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 48: &lt;b&gt;Previous Visits&lt;/b&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 51: &lt;th&gt;Date&lt;/th&gt;
+HTML: src/main/resources/templates/pets/createOrUpdateVisitForm.html Line 52: &lt;th&gt;Description&lt;/th&gt;
+HTML: src/main/resources/templates/pets/createOrUpdatePetForm.html Line 7: &lt;th:block th:if=&quot;${pet['new']}&quot;&gt;New &lt;/th:block&gt;
+HTML: src/main/resources/templates/pets/createOrUpdatePetForm.html Line 14: &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Owner&lt;/label&gt;
+HTML: src/main/resources/templates/vets/vetList.html Line 8: &lt;h2&gt;Veterinarians&lt;/h2&gt;
+HTML: src/main/resources/templates/vets/vetList.html Line 13: &lt;th&gt;Name&lt;/th&gt;
+HTML: src/main/resources/templates/vets/vetList.html Line 14: &lt;th&gt;Specialties&lt;/th&gt;
+HTML: src/main/resources/templates/vets/vetList.html Line 22: th:if=&quot;${vet.nrOfSpecialties == 0}&quot;&gt;none&lt;/span&gt;&lt;/td&gt;
+HTML: src/main/resources/templates/vets/vetList.html Line 28: &lt;span&gt;Pages:&lt;/span&gt;
+HTML: src/main/resources/templates/owners/createOrUpdateOwnerForm.html Line 6: &lt;h2&gt;Owner&lt;/h2&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 9: &lt;h2&gt;Owner Information&lt;/h2&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 24: &lt;th&gt;Name&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 28: &lt;th&gt;Address&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 32: &lt;th&gt;City&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 36: &lt;th&gt;Telephone&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 49: &lt;h2&gt;Pets and Visits&lt;/h2&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 56: &lt;dt&gt;Name&lt;/dt&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 58: &lt;dt&gt;Birth Date&lt;/dt&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 61: &lt;dt&gt;Type&lt;/dt&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 69: &lt;th&gt;Visit Date&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 70: &lt;th&gt;Description&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 78: &lt;td&gt;&lt;a th:href=&quot;@{__${owner.id}__/pets/__${pet.id}__/edit}&quot;&gt;Edit Pet&lt;/a&gt;&lt;/td&gt;
+HTML: src/main/resources/templates/owners/ownerDetails.html Line 79: &lt;td&gt;&lt;a th:href=&quot;@{__${owner.id}__/pets/__${pet.id}__/visits/new}&quot;&gt;Add Visit&lt;/a&gt;&lt;/td&gt;
+HTML: src/main/resources/templates/owners/findOwners.html Line 6: &lt;h2&gt;Find Owners&lt;/h2&gt;
+HTML: src/main/resources/templates/owners/findOwners.html Line 12: &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Last name &lt;/label&gt;
+HTML: src/main/resources/templates/owners/findOwners.html Line 15: maxlength=&quot;80&quot; /&gt; &lt;span class=&quot;help-inline&quot;&gt;&lt;div
+HTML: src/main/resources/templates/owners/findOwners.html Line 29: &lt;a class=&quot;btn btn-primary&quot; th:href=&quot;@{/owners/new}&quot;&gt;Add Owner&lt;/a&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 7: &lt;h2&gt;Owners&lt;/h2&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 12: &lt;th style=&quot;width: 150px;&quot;&gt;Name&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 13: &lt;th style=&quot;width: 200px;&quot;&gt;Address&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 14: &lt;th&gt;City&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 15: &lt;th style=&quot;width: 120px&quot;&gt;Telephone&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 16: &lt;th&gt;Pets&lt;/th&gt;
+HTML: src/main/resources/templates/owners/ownersList.html Line 32: &lt;span&gt;Pages:&lt;/span&gt;
+HTML: src/main/resources/templates/error.html Line 7: &lt;h2&gt;Something happened...&lt;/h2&gt;
+
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at app//org.springframework.samples.petclinic.system.I18nPropertiesSyncTest.checkNonInternationalizedStrings(I18nPropertiesSyncTest.java:81)
+	at java.base@17.0.8/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.8/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.8/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="checkI18nPropertyFilesAreInSync()" classname="org.springframework.samples.petclinic.system.I18nPropertiesSyncTest" time="0.096"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

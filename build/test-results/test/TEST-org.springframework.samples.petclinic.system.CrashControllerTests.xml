@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.system.CrashControllerTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-26T01:34:36" hostname="trachmans-MacBook-Pro.local" time="0.034">
+  <properties/>
+  <testcase name="testTriggerException()" classname="org.springframework.samples.petclinic.system.CrashControllerTests" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
